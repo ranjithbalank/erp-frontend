@@ -10,12 +10,12 @@ See the BRD / `CLAUDE.md` for the binding architecture and security rules.
 
 ## Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | React 18 + TypeScript |
-| Build tool | Vite |
-| Mobile | Ionic React (single codebase, Android + iOS) |
-| Lint/scan | ESLint (security plugin), Prettier, tsc, Semgrep |
+| Layer      | Technology                                       |
+| ---------- | ------------------------------------------------ |
+| Framework  | React 18 + TypeScript                            |
+| Build tool | Vite                                             |
+| Mobile     | Ionic React (single codebase, Android + iOS)     |
+| Lint/scan  | ESLint (security plugin), Prettier, tsc, Semgrep |
 
 ## Getting started (local)
 
@@ -36,12 +36,12 @@ feature/module branch ──PR──▶ dev1 ──PR──▶ dev2 ──PR─�
    (your work)              (integration)  (QA dev)   (staging)  (production)
 ```
 
-| Branch | Purpose |
-|---|---|
+| Branch | Purpose                                                                              |
+| ------ | ------------------------------------------------------------------------------------ |
 | `dev1` | Active development / integration. **Default branch** — open module & phase PRs here. |
-| `dev2` | Second dev/integration stage. |
-| `test` | QA / staging validation. |
-| `prod` | Production. Release-only. |
+| `dev2` | Second dev/integration stage.                                                        |
+| `test` | QA / staging validation.                                                             |
+| `prod` | Production. Release-only.                                                            |
 
 ## Per-module / per-phase workflow
 
@@ -65,4 +65,5 @@ To enable type-aware lint rules for a production app, extend
 `tseslint.configs.recommendedTypeChecked` (or `strictTypeChecked`) in
 `eslint.config.js`, and consider `eslint-plugin-react-x` /
 `eslint-plugin-react-dom`. See the [Vite React docs](https://vite.dev/).
+
 </details>
